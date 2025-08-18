@@ -3,7 +3,7 @@ from openai import AzureOpenAI
 
 # Initialize the client
 client = AzureOpenAI(
-    api_key="65aaa9f6d52e77f1",  
+    api_key="",  
     azure_endpoint="https://mavericks-secureapi.azurewebsites.net/api/azureai",
     api_version="2024-02-01"
 )
@@ -21,4 +21,5 @@ try:
     )
     print("Hexaware Info:\n", response.choices[0].message.content)
 except Exception as e:
+
     print(f"Error: {str(e)}")
