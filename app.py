@@ -4,7 +4,7 @@ from openai import AzureOpenAI
 # Initialize the client
 client = AzureOpenAI(
     api_key="",  
-    azure_endpoint="https://mavericks-secureapi.azurewebsites.net/api/azureai",
+    azure_endpoint="i.azurewebsites.net/api/azureai",
     api_version="2024-02-01"
 )
 
@@ -23,3 +23,4 @@ try:
 except Exception as e:
 
     print(f"Error: {str(e)}")
+
